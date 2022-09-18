@@ -8,6 +8,11 @@
 }
  
 /* 使用flex布局，让内容垂直和水平居中 */
+body{
+    background: url(./img/7e50156fly1g6rwsk9qwrj217q0oce81.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 section {
     /* 相对定位 */
