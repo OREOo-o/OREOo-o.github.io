@@ -1,136 +1,77 @@
-<!doctype html>
-<html>
-
-	<head>
-		<meta charset="utf-8">
-		<title>沙璇的项目作品</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沙璇的个人总结</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="Sunday.css">
+        <script type="text/javascript"> 
+        function check(){
+            var User=document.getElementById("username_id").value;
+            var Password=document.getElementById("password_id").value;
+            var tijiao=document.getElementById("rb");
+              if(User=="OREOqaq" && Password=="alone200147"){
+                  alert("登录成功！");
+                  window.open("communication.html");
+              }else{
+                  alert("用户名或密码错误!");
+              }
+            }
+         </script>
 		<style type="text/css">
-			/* CSS Document */
-			* {
-				margin: 0;
-				padding: 0;
+		.content {
+			width: 165px;
+			height: 72px;
+			margin:150px auto auto;
+			border-radius: 10px;
+			background-color: rgba(236, 236, 236, 0.35);
+			transition: all 1.0s;
+			/*box-shadow: 0px 0px 20px rgba(0,0,0,0.3);*/
 			}
-
-			a {
-				text-decoration: none;
+		body {
+			background: url(./img/7e50156fly1g6rwsk9qwrj217q0oce81.jpg) no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		.content1 {
+			width: 500px;
+			height: 100px;
+			margin:250px auto auto;
+			border-radius: 10px;
+			background-color: rgba(236, 236, 236, 0.70);
+			transition: all 1.0s;
 			}
-
-			.clearfix:after {
-				content: "";
-				display: block;
-				height: 0;
-				visibility: hidden;
-				clear: both;
-			}
-
-			.clearfix {
-				*zoom: 1;
-			}
-
-			body {
-				background: url(./img/7e50156fgy1gbml4resopj21c50qc4lx.jpg) no-repeat;
-				background-size: cover;
-				background-attachment: fixed;
-			}
-
-			.content {
-				width: 900px;
-				height: 500px;
-				margin:150px auto 0 auto;
-				border-radius: 10px;
-				background-color: rgba(236, 236, 236, 0.35);
-				transition: all 1.0s;
-				/*box-shadow: 0px 0px 20px rgba(0,0,0,0.3);*/
-			}
-
-			.content:hover {
-				box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.52);
-			}
-
-			.content_r {
-				margin: 80px auto auto auto;
-				/*	background-color: pink;*/
-			}
-
-			.content_l {
-				width: 100%;
-                  text-align: center;
-			}
-
-			.content_l h5 {
-
-				font-size: 17px;
-			}
-
-			.cc {
-				margin-top: 10px;
-				color: #1F2023;
-				font-size: 18px;
-			}
-
-			.color_1 {
-				color: #4855EC;
-				font-size: 18px;
-			}
-
-			.deeppink {
-				color: #308014;
-			}
-
-			.link {
-				margin-top: 30px;
-			}
-
-			.link a {
-				display: block;
-				height: 45px;
-				margin: 5px 5px 0 0;
-				/*	padding: 0 15px;*/
-				color: #fff;
-				line-height: 45px;
-				transition: all 0.8s;
-				/*	background-color: deeppink;*/
-
-			}
-
-			.link a:hover {
-				background-color: rgba(221, 160, 221, 0.35);
-			}
-
-			.deeppink_1 {
-				background-color: rgba(0, 199, 140, 1);
-			}
-
-			.dodgerblue {
-				background-color:rgba(255, 192, 203, 1);
-			}
-
-			.magenta {
-				background-color:rgba(240, 230, 140, 1)
-			}
-
-			.orange {
-				background-color:rgba(64, 244, 208, 1);
-			}
-		</style>
-	</head>
-
-	<body>
-		<div class="content">
-			<div class="content_r clearfix">
-				<div class="content_l clearfix">
-                       <h2>           </h2>
-					<h2>          部分项目作品如下</h2>
-					<div class="link">
-						<a href="./stu.html" target="_blank">南开大学学生信息管理系统</a>
-						<a href="./work.html"  target="_blank">项目作品</a>
-						<a href="./summary.html"  target="_blank">个人总结</a>
-						<a href="https://github.com/OREOo-o/" target="_blank">github</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</body>
-
-</html>
-Footer
+	   </style>
+    </head>
+    <body>
+        <form id="formid" name="myform" method='post' onsubmit="return check();" >
+<div class="content">
+     <div class="a1">
+                            <div class="form-group">
+                                <label for="username" class="label" >
+                                       
+                                </label>
+                                <input type="text" name="username" id="username_id" placeholder="用户名" autocomplete="username">
+                                    
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="label" >
+                               
+                                </label>
+                                <input type="password" name="password" id="password_id" placeholder="密码" autocomplete="current-password">
+                            </div>
+                          
+                              <div align="left" style="float:left">
+                              <input type="button" id="lb" οnclick="login()" value="注册" />
+                         
+                              </div>
+                              <div align="left">
+                             <input name="tijiao" type="submit" id="rb" οnclick="check();" value="登录"/>
+                              </div>
+            </form>
+    </div>
+</div>
+    </body>
+    </html>
