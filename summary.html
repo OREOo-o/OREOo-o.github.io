@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="CSS/about.css">
  
     <title>沙璇的个人总结</title>
+        
+    <script type="text/javascript"> 
+        function check(){
+            var User=document.getElementById("username_id").value;
+            var Password=document.getElementById("password_id").value;
+            var tijiao=document.getElementById("rb");
+              if(User=="OREOqaq" && Password=="alone200147"){
+                  alert("登录成功！");
+                  window.open("communication.html");
+              }else{
+                  alert("用户名或密码错误!");
+              }
+            }
+        </script>
 </head>
  
 <body>
@@ -37,7 +51,7 @@
  
                         </div>
                         <div class="inputBox">
-                            <input type="submit" value="登录">
+                            <input type="submit" οnclick="check();" value="登录">
  
                         </div>
                         <p class="forget">忘记密码?<a href="#">
