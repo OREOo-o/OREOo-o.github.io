@@ -1,77 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+ 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="stylesheet" href=".css/style.css">
+ 
     <title>沙璇的个人总结</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="Sunday.css">
-        <script type="text/javascript"> 
-        function check(){
-            var User=document.getElementById("username_id").value;
-            var Password=document.getElementById("password_id").value;
-            var tijiao=document.getElementById("rb");
-              if(User=="OREOqaq" && Password=="alone200147"){
-                  alert("登录成功！");
-                  window.open("communication.html");
-              }else{
-                  alert("用户名或密码错误!");
-              }
-            }
-         </script>
-		<style type="text/css">
-		.content {
-			width: 165px;
-			height: 72px;
-			margin:150px auto auto;
-			border-radius: 10px;
-			background-color: rgba(236, 236, 236, 0.35);
-			transition: all 1.0s;
-			/*box-shadow: 0px 0px 20px rgba(0,0,0,0.3);*/
-			}
-		body {
-			background: url(./img/7e50156fly1g6rwsk9qwrj217q0oce81.jpg) no-repeat;
-			background-size: cover;
-			background-attachment: fixed;
-		}
-		.content1 {
-			width: 500px;
-			height: 100px;
-			margin:250px auto auto;
-			border-radius: 10px;
-			background-color: rgba(236, 236, 236, 0.70);
-			transition: all 1.0s;
-			}
-	   </style>
-    </head>
-    <body>
-        <form id="formid" name="myform" method='post' onsubmit="return check();" >
-<div class="content">
-     <div class="a1">
-                            <div class="form-group">
-                                <label for="username" class="label" >
-                                       
-                                </label>
-                                <input type="text" name="username" id="username_id" placeholder="用户名" autocomplete="username">
-                                    
-                            </div>
-                            <div class="form-group">
-                                <label for="password" class="label" >
-                               
-                                </label>
-                                <input type="password" name="password" id="password_id" placeholder="密码" autocomplete="current-password">
-                            </div>
-                          
-                              <div align="left" style="float:left">
-                              <input type="button" id="lb" οnclick="login()" value="注册" />
-                         
-                              </div>
-                              <div align="left">
-                             <input name="tijiao" type="submit" id="rb" οnclick="check();" value="登录"/>
-                              </div>
-            </form>
-    </div>
-</div>
-    </body>
-    </html>
+</head>
+ 
+<body>
+    <section>
+        <!-- 背景颜色 -->
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="box">
+            <!-- 背景圆 -->
+            <div class="circle" style="--x:0"></div>
+            <div class="circle" style="--x:1"></div>
+            <div class="circle" style="--x:2"></div>
+            <div class="circle" style="--x:3"></div>
+            <div class="circle" style="--x:4"></div>
+            <!-- 登录框 -->
+            <div class="container">
+                <div class="form">
+                    <h2>登录</h2>
+                    <form>
+                        <div class="inputBox">
+                            <input type="text" placeholder="姓名">
+ 
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" placeholder="密码">
+ 
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" value="登录">
+ 
+                        </div>
+                        <p class="forget">忘记密码?<a href="#">
+                                点击这里
+                            </a></p>
+                        <p class="forget">没有账户?<a href="#">
+                                注册
+                            </a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+ 
+</html>
