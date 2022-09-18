@@ -1,1 +1,51 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沙璇的个人总结</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="Sunday.css">
+        <script type="text/javascript"> 
+        function check(){
+            var User=document.getElementById("username_id").value;
+            var Password=document.getElementById("password_id").value;
+            var tijiao=document.getElementById("rb");
+              if(User=="OREOqaq" && Password=="alone200147"){
+                  alert("登录成功！");
+                  window.open("communication.html");
+              }else{
+                  alert("用户名或密码错误!");
+              }
+            }
+         </script>
+    </head>
+    <body>
+        <form id="formid" name="myform" method='post' onsubmit="return check();" >
+     <div class="a1">
+                            <div class="form-group">
+                                <label for="username" class="label" >
+                                       
+                                </label>
+                                <input type="text" name="username" id="username_id" placeholder="用户名" autocomplete="username">
+                                    
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="label" >
+                               
+                                </label>
+                                <input type="password" name="password" id="password_id" placeholder="密码" autocomplete="current-password">
+                            </div>
+                          
+                              <div align="left" style="float:left">
+                              <input type="button" id="lb" οnclick="login()" value="注册" />
+                         
+                              </div>
+                              <div align="right">
+                             <input name="tijiao" type="submit" id="rb" οnclick="check();" value="登录"/>
+                              </div>
+            </form>
+    </div>
+    </body>
+    </html>
